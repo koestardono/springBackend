@@ -20,5 +20,10 @@ public class PerpusBackendApplication {
 	public String hello(@RequestParam(value = "name", defaultValue = "world") String name) {
 		return String.format("Hello %s!", name);
 	}
+	
+	@GetMapping("/hello")
+	public String hello12(@RequestParam(value = "name", defaultValue = "world") String name) {
+		return String.format("Hello %s!", name);
+	}
 
 }
